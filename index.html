@@ -2,12 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project-wristwatch/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/project-wristwatch/assets/apple-touch-icon-2b1d8a04.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQQNGQOKxvJMAAADPklEQVRIx33VX4gWVRgG8N+Zb91wXdpYa13HPxTVVmqGrqFspW6lIERXQZBIWURIEXXpVRfRdZcmghZEUBTRVbayJgoW6OqKrpoXC+na57/N1BRc95vThePnzCz2DgNz3vO+z/uc57xzTlCxXlrio17Ub7HZ2nFd3VF77HbK5KFKfKgk1yyJb1lnvpZKZMOYnb4MB2MJJBSS6fZhfEeXe9slX/nc2WAod9QK6b22xfXa/Z+16bMiHI9jqfpdgF5YaUdcVl5SpiHKhLJ7nv5wwuhtiFqz+g5PFqOizExrrNXhrMmyXJ36wkFnUnU1Umbbalk1/WmfeF2v1TgsK0vWGRYYcLWu1ktisw3V9Ed8apFE1OJxw85KyizmhWAwzRL0epsoFgCme1dPc9RhnRaRQgw2WEEi8aZZsVQ/esXLze+IFzwsq0LMtFFLose6Mv2GBTZqbe5ElOn2Urn6bag1Fib6zS/X7/CeFEwYzzk09OmUNRnlNseaxOpi00a85vl8dMxWNzX86y+TFmrXrq0oZKK/xeIirYZnrc/bMxq1zypzBF06bHYVP/ixCLEokd6llOmyycx8dFmnJ3zruDZt7jfXAtHvpd3SnRR7P1jpQaddcsNNN/R4wymXm5BXbDFWbuvW0k8bDNor84wNZnlAmy7Peay5pO/sl1T2InG9KOEVF11wSNBthkSrTZbkswd8IyvXZyJRDyUOQc3ffpPkoQ+5D1y0xXilnQPnE0dNsWiXCyXPpK8dvnN4FG0ksUejgIggMWpfKW6f7/P5yoGxJ7HbmbKQBJN+dq3pO+0L16qrF6jblfjDL1Onaob9pIHolM+cVJtan0FHa2k07lUzivUJGo4456KdtjiRS1qW22WbjdZS6rr0lZdAcMuIvYZda+5IaMYE2GGbrFaXRsfDcvOnKpHkbzk9/zroY+PyM/GqE1bpLOKHwmMq/T+9b5ghNepSxsJJfXcgqmKF6vi0DwwwJL8X6lJxNByw0NxiUpFBIX3IJrvkd1PeXHWpOGZA0GO6e9s/YbuPHNG82krwS4VpcbmN1kqn/HaZcwbDdvtNDBXcVX6WMs1T1uq3SLdW3HLeiF8NhBETd2vftv8AVKsFK+h/evMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDUtMDRUMTM6MjU6MDMrMDA6MDBwN+8vAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA1LTA0VDEzOjI1OjAzKzAwOjAwAWpXkwAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQQNGQL9wcLaAAABV0lEQVQoz0XQP0hUARwH8M/vvf7cq6C8Qu4eRIVwjkGGS0ZhtjRF0CLVtTQ2OjhWNDeJtJ2DY0tLg3QgadFQBBE0R3HVUWqKp3Tea3hD2/cL3z98vwFjHCwua7qohh9WLGjbfY8Yg1ox67YhBgqJYN2ixzohzamZ15RRGHHGmr6oGDcayzbT/ICHRRMGrnjkhg0fhaAhi5eJyeIW7BlxX13muhMGwLSriTuqFA6755Rtfaed91cBxzTT+hNH4aZpA8+kKoZU/bIlqCbqDJw0ace2Q9oqJlzQK0uGEwhdsxbtN+WSTMe8NQES3wk7Ol7ZdcRZfS2fJGVCN4mVEu3z2Vuw5Hk5E7Ga5j3XZIG+b45746l1aenaiAdp/kVuvGzralu1VZ6NWDCX5nvxwahGCKHgf/wLM36nuWLTskxDpRQF/NGKGV+V7BwVU+6aMIyfXmvFkt47/AM5j2KWZpIujAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNS0wNFQxMzoyNTowMiswMDowMNZA5JsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDUtMDRUMTM6MjU6MDIrMDA6MDCnHVwnAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS01MTJ4NTEyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K" />
+    <link
+      rel="mask-icon"
+      href="/project-wristwatch/assets/safari-pinned-tab-7a557ad8.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>The Watch Spot</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
-    <script type="module" crossorigin src="/project-wristwatch/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/project-wristwatch/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/project-wristwatch/assets/index-2f610c79.js"></script>
+    <link rel="stylesheet" href="/project-wristwatch/assets/index-fd193c53.css">
   </head>
   <body>
     <header class="header">
@@ -23,63 +54,36 @@
     </ul>
   </nav>
 </header>
+<!-- шаблон зверху видалити і писати свій код -->
 
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/project-wristwatch/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+    <main>
+      <section>
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/project-wristwatch/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    <h1>dgdsgsdgdsgdsgs</h1>
+    <p>dsgdsgdsgdsgsd1233</p>
   </div>
 </section>
 
+      <section>
+  <div class="container"></div>
+</section>
 
+      <section>
+  <div class="container"></div>
+</section>
+
+      <section>
+  <div class="container"></div>
+</section>
+
+      <section>
+  <div class="container"></div>
+</section>
+
+    </main>
+    <section>
+    <div class="container"></div>
+</section>
     
   </body>
 </html>
