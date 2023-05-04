@@ -1,11 +1,3 @@
-@font-face {
-  font-family: Epilogue;
-  src: url('Epilogue-VariableFont_wght.ttf') format('ttf');
-}
-
-body {
-  font-family: 'Epilogue', sans-serif;
-}
 /**
   |============================
   | include css partials with
@@ -21,6 +13,14 @@ body {
 @import url('./sale.css');
 @import url('./footer.css');
 
+@font-face {
+  font-family: Epilogue;
+  src: url('Epilogue-VariableFont_wght.ttf') format('ttf');
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+}
 :root {
   /* font-family: 'Epilogue', sans-serif; */
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
