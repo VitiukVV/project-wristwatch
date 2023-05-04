@@ -36,7 +36,7 @@
         gap: 40px;
     }
 
-    .catal-img{
+    .catal-img {
         margin-bottom: 57px;
     }
 
@@ -55,5 +55,23 @@
         line-height: 1.2;
         letter-spacing: -0.02em;
         color: rgba(20, 20, 20, 0.5);
+    }
+
+    .catalog-but-mob {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 108px;
+        height: 42px;
+        padding: 14px 28px;
+        color: #ffffff;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        text-align: center;
+        text-transform: uppercase;
+        background: #1E2827;
+        border-radius: 8px
     }
 }
