@@ -1,11 +1,138 @@
-.sale {
+:root {
+  --primary-sale-text-color: #141414;
+  --secondary-sale-text-color: rgba(20, 20, 20, 0.5);
+}
+
+.sale-container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .sale-container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sale-container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale-container {
+    width: 1200px;
+    padding: 0 12px;
+  }
+}
+
+.sale-section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-section {
+    padding-top: 64px;
+    padding-bottom: 128px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale-section {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
 }
 
 .sale-title {
+  margin-bottom: 80px;
   font-weight: 600;
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: -0.02em;
 
-  color: #141414;
+  color: var(--primary-sale-text-color);
+}
+
+.sale-second-title {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--primary-sale-text-color);
+}
+
+.sale-top-text {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--secondary-sale-text-color);
+}
+
+.prices {
+  margin-bottom: 40px;
+}
+
+.new-price {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  color: var(--primary-sale-text-color);
+}
+
+.old-price {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  text-decoration-line: line-through;
+  color: var(--secondary-sale-text-color);
+}
+
+.sale-subtitle {
+  position: relative;
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-sale-text-color);
+}
+
+.sale-subtitle::before {
+  display: block;
+  margin-bottom: 8px;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--primary-sale-text-color);
+}
+
+.sale-subtitle::after {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  display: inline-block;
+  vertical-align: middle;
+
+  content: '';
+  width: 16px;
+  height: 1px;
+  background-color: var(--primary-sale-text-color);
+}
+
+.sale-bottom-text.subject {
+  margin-bottom: 40px;
+}
+
+.sale-bottom-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  color: var(--secondary-sale-text-color);
 }
