@@ -1,2 +1,50 @@
+.container-hero {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .hero {
+background-color: #141414;
+}
+.hero-title {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    width: 100%;
+}
+.watch-hero-img {
+    width: 200px;
+}
+.number-of-watch {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+.end-number-watches {
+    position: relative;
+}
+.end-number-watches::before {
+    content: '';
+    background-color: #FFFFFF;
+    height: 1px;
+    width: 32px;
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+@media screen and (min-width: 374px) {
+    .container-hero {
+        width: 375px;
+    }
+    .hero-title {
+        max-width: 335px;
+    }
+    .watch-hero-img {
+        width: 266px;
+        height: 200px;
+    }
 }
