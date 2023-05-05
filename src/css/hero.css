@@ -1,10 +1,14 @@
 .container-hero {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero {
-background-color: #141414;
+    background-color: #141414;
+    padding-top: 35px;
+    padding-bottom: 40px;
 }
 .hero-title {
     font-weight: 600;
@@ -13,9 +17,11 @@ background-color: #141414;
     letter-spacing: -0.04em;
     color: #FFFFFF;
     width: 100%;
+    margin-bottom: 60px;
 }
 .watch-hero-img {
-    width: 200px;
+    width: 220px;
+    margin-bottom: 20px;
 }
 .number-of-watch {
     font-size: 14px;
@@ -24,17 +30,65 @@ background-color: #141414;
     color: #FFFFFF;
 }
 .end-number-watches {
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 6px;
 }
 .end-number-watches::before {
     content: '';
     background-color: #FFFFFF;
     height: 1px;
     width: 32px;
-    display: block;
-    position: absolute;
-    left: 0;
 }
+.number-of-watch {
+    display: flex;
+}
+.descr-watches-hero {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    position: relative;
+    left: 87px;
+    margin-bottom: 40px;
+}
+.btn-wrapper {
+    display: flex;
+    gap: 12px;
+}
+.btn-number-wrapper {
+    display: flex;
+    align-items: end;
+    gap: 116px;
+    margin-bottom: 40px;
+}
+.slide-img-hero {
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2,1);
+}
+.hero-slider-icon {
+    stroke: rgba(255, 255, 255, 0.5);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2,1);
+}
+.slide-img-hero:hover .hero-slider-icon,
+.slide-img-hero:focus .hero-slider-icon {
+    stroke: rgba(255, 255, 255);
+}
+.slide-img-hero:hover,
+.slide-img-hero:focus {
+    border: 1px solid rgba(255, 255, 255);
+}
+
 
 @media screen and (min-width: 374px) {
     .container-hero {
@@ -46,5 +100,8 @@ background-color: #141414;
     .watch-hero-img {
         width: 266px;
         height: 200px;
+    }
+    .descr-watches-hero {
+        max-width: 248px;
     }
 }
