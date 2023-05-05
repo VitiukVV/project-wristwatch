@@ -25,9 +25,7 @@
     max-width: 448px;
 }
 
-.new-watches-item {
-    width: 335px;
-}
+
 
 .new-watches {
     display: flex;
@@ -48,13 +46,20 @@
     padding: 0px;
     gap: 20px;
 }
-
+@media screen and (max-width: 374px) {
+.new-watches-item {
+        width: 100%;
+    }
+}
 
 @media screen and (min-width: 375px) {
     .new-watches-container {
         width: 375px;
         margin: 0 auto;
     }
+        .new-watches-item {
+            width: 335px;
+        }
 
 }
 
@@ -84,8 +89,8 @@
 @media screen and (min-width: 1280px) {
 
     .new-watches-container {
-        width: 1200px;
-        padding: 80px 12px;
+        width: 1280px;
+        padding: 80px 52px;
 
     }
 
