@@ -6,6 +6,7 @@
 .sale-section {
   padding-top: 40px;
   padding-bottom: 80px;
+  background: #efefef;
 }
 
 .sale-title {
@@ -145,8 +146,8 @@
 
 @media screen and (min-width: 1280px) {
   .sale-container {
-    width: 1200px;
-    padding: 0 12px;
+    width: 1280px;
+    padding: 0 52px;
   }
   .sale-section {
     padding-top: 80px;
