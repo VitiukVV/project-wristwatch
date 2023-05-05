@@ -1,28 +1,14 @@
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    width: 100%;
+.about-us {
+    padding: 40px 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.container {
-    width: 100%;
+.about-us-container {
     margin-left: auto;
     margin-right: auto;
-    padding: 40px 20px;
     border: 2px solid tomato;
 }
 
-.about-title {
+.about-us-title {
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 600;
@@ -30,32 +16,79 @@ p {
     line-height: 1.25;
     letter-spacing: -0.02em;
     color: #1E2827;
-    margin-bottom: 20px;
 }
 
-.about-text {
+.about-us-item {
     font-weight: 300;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: #141414;
-    margin-bottom: 40px;
 }
 
-.about-text-paragraph {
-    margin-top: 20px;
+.about-us-img {
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media screen and (max-width: 767px) {
-    .container {
+@media screen and (min-width: 375px) {
+    .about-us-container {
         width: 375px;
+    }
+
+    .about-us-title {
+        margin-bottom: 20px;
+    }
+
+    .about-us-item {
+        margin-bottom: 40px;
+    }
+
+    .about-us-item-paragraph {
+        margin-top: 20px;
     }
 }
 
 @media screen and (min-width:768px) {
-    .container {
-        max-width: 1279px;
+    .about-us-container {
+        width: 768px;
     }
 
+    .about-us-title {
+        width: 174px;
+        margin-right: 40px;
+    }
 
+    .about-us-field {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-us-list {
+        width: 490px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about-us-item-text {
+        width: 220px;
+        margin-right: 20px;
+    }
+
+    .about-us-item-paragraph {
+        width: 250px;
+        margin-top: 0;
+    }
+
+    .about-us-img {
+        width: 704px;
+    }
+}
+
+@media screen and (min-width: 1280) {
+    .about-us-container {
+        width: 1280px;
+    }   
 }
