@@ -161,6 +161,10 @@
     margin-right: auto;
     width: 981px;
   }
+
+  .sale-img-thumb {
+    margin-bottom: 0;
+  }
   .sale-holder {
     width: 369px;
     margin-left: 40px;
