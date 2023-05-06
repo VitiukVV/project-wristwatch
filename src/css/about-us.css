@@ -1,8 +1,13 @@
+.about-us {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .about-us-container {
     margin-left: auto;
     margin-right: auto;
-    /* border: 2px solid tomato; */
-    padding: 40px 20px;
+    padding-right: 20px;
+    padding-left: 20px; 
 }
 
 .about-us-title {
@@ -32,6 +37,9 @@
 
     .about-us-item-paragraph {
         margin-top: 20px;
+    }
+
+    .about-us-item:last-child {
         margin-bottom: 40px;
     }
 }
@@ -43,9 +51,15 @@
 }
 
 @media screen and (min-width:768px) {
+    .about-us {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
     .about-us-container {
         width: 768px;
-        padding: 64px 32px;
+        padding-right: 32px;
+        padding-left: 32px;
     }
 
     .about-us-title {
@@ -55,7 +69,6 @@
 
     .about-us-field {
         display: flex;
-        flex-direction: row;
         margin-bottom: 40px;
     }
 
@@ -66,8 +79,6 @@
 
     .about-us-list {
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
     }
 
     .about-us-item-text {
@@ -86,14 +97,19 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .about-us {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
     .about-us-container {
         width: 1280px;
-        padding: 80px 52px;
+        padding-right: 52px;
+        padding-left: 52px;
     }
 
     .about-us-field {
         display: flex;
-        flex-direction: row;
     }
 
     .about-us-title {
