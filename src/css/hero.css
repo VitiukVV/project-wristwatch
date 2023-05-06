@@ -65,7 +65,7 @@
 }
 .slide-number-wrapper {
     position: absolute;
-    bottom: 0;
+    bottom: -35px;
     right: 67px;
 }
 .slide-btn-hero {
@@ -134,6 +134,9 @@
         height: 255px;
         margin-bottom: 20px;
     }
+    .right-pard-wrapper {
+        width: 436px;
+    }
     .descr-watches-hero {
         position: absolute;
         top: 316px;
@@ -157,7 +160,8 @@
         height: 410px;
     }
     .slide-number-wrapper {
-        right: 267px;
+        bottom: -43px;
+        right: 0;
     }
     .swiper {
         width: 436px;
