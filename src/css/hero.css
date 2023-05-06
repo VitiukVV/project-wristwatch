@@ -58,12 +58,15 @@
 .btn-wrapper {
     display: flex;
     gap: 12px;
-}
-.btn-number-wrapper {
-    display: flex;
-    align-items: end;
-    gap: 116px;
     margin-bottom: 40px;
+}
+.right-pard-wrapper {
+    position: relative;
+}
+.slide-number-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 67px;
 }
 .slide-btn-hero {
     background-color: transparent;
@@ -88,6 +91,9 @@
 .slide-btn-hero:hover,
 .slide-btn-hero:focus {
     border: 1px solid rgba(255, 255, 255);
+}
+.swiper {
+    width: 266;
 }
 
 
@@ -150,6 +156,12 @@
         width: 704px;
         height: 410px;
     }
+    .slide-number-wrapper {
+        right: 267px;
+    }
+    .swiper {
+        width: 436px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -183,5 +195,11 @@
         display: flex;
         gap: 68px;
         align-items: end;
+    }
+    .slide-number-wrapper {
+        right: 0
+    }
+    .btn-wrapper {
+        margin-bottom: 0;
     }
 }

@@ -37,6 +37,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <load src="partials/header.html" />
@@ -49,5 +53,20 @@
     </main>
     <load src="partials/footer.html" />
     <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: 'button-next',
+          prevEl: 'button-prev',
+        }
+      });
+    </script>
   </body>
 </html>
