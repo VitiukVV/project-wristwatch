@@ -67,7 +67,7 @@
 
     /*------------------- Catalog----------------- */
 
-    .catalog-section {
+    .container-catalog {
         padding-top: 40px;
         padding-bottom: 40px;
         background-color: #EFEFEF;
@@ -148,7 +148,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .catalog-section {
+    .container-catalog {
         padding-top: 64px;
         padding-bottom: 64px;
         background-color: #EFEFEF;
@@ -188,7 +188,7 @@
 
 @media screen and (min-width: 1280px) {
 
-    .catalog-section {
+    .container-catalog {
         padding-top: 80px;
         padding-bottom: 80px;
 
