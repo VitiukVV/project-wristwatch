@@ -1,7 +1,7 @@
 .about-us-container {
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
     padding: 40px 20px;
 }
 
@@ -17,9 +17,7 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    color: #141414;
 }
-
 
 .about-us-img {
     width: 335px;
@@ -27,21 +25,20 @@
     margin-right: auto;
 }
 
-@media screen and (min-width: 375px) {
-    .about-us-container {
-        width: 375px;
-    }
-
+@media screen and (max-width: 767px) {
     .about-us-title {
         margin-bottom: 20px;
     }
 
-    .about-us-item {
-        margin-bottom: 40px;
-    }
-
     .about-us-item-paragraph {
         margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .about-us-container {
+        width: 375px;
     }
 }
 
@@ -59,10 +56,15 @@
     .about-us-field {
         display: flex;
         flex-direction: row;
+        margin-bottom: 40px;
+    }
+
+    .about-us-title {
+        font-size: 40px;
+        line-height: 1.1;
     }
 
     .about-us-list {
-        width: 490px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -83,8 +85,32 @@
     }
 }
 
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1280px) {
     .about-us-container {
         width: 1280px;
-    }   
+        padding: 80px 52px;
+    }
+
+    .about-us-field {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-us-title {
+        margin-right: 110px;
+    }
+
+    .about-us-item-text {
+        width: 439px;
+        margin-right: 40px;
+    }
+
+    .about-us-item-paragraph {
+        width: 380px;
+    }
+
+    .about-us-img {
+        width: 892px;
+        margin-right: 0;
+    }
 }
