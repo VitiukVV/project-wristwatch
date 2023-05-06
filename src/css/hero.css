@@ -135,8 +135,16 @@
         margin-bottom: 0;
         display: inline;
     }
+    .slide-btn-hero {
+        width: 40px;
+        height: 40px;
+    }
+    .hero-slider-icon {
+        width: 24px;
+        height: 24px;
+    }
     .btn-number-wrapper {
-        gap: 290px;
+        gap: 262px;
     }
     .watch-arm-hero-img {
         width: 704px;
@@ -165,7 +173,6 @@
         display: inline;
     }
     .btn-number-wrapper {
-        gap: 284px;
         margin-bottom: 0;
     }
     .watch-arm-hero-img {
