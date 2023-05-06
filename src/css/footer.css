@@ -16,7 +16,7 @@ ul {
   background-color: #1e2827;
 }
 
-.container {
+.footer-container {
   padding: 40px 20px 20px 20px;
   min-height: 434px;
   display: flex;
@@ -57,10 +57,16 @@ ul {
   color: #ffffff;
 }
 .footer-logo-link {
-  display: block;
+  display: flex;
   color: #ffffff;
   margin-bottom: 40px;
 }
+
+.footer-logo-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .footer-address-list {
   display: flex;
   flex-wrap: wrap;
@@ -86,8 +92,27 @@ ul {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 80px;
+  gap: 14px;
 }
 
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.footer-soc-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer-soc-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+}
 .footer-text {
   display: block;
   font-family: 'Epilogue';
@@ -106,8 +131,8 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
+  .footer-container {
+    max-width: 1279px;
     min-height: 476px;
     padding: 80px 32px 20px 32px;
     justify-content: space-between;
@@ -127,7 +152,14 @@ ul {
   .footer-soc-list {
     margin-bottom: 0px;
   }
-
+  .footer-soc-item {
+    width: 44px;
+    height: 44px;
+  }
+  .footer-soc-icon {
+    width: 28px;
+    height: 28px;
+  }
   .footer-address-list {
     margin-bottom: 0px;
     width: 175px;
@@ -160,9 +192,9 @@ ul {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
+@media screen and (min-width: 1280px) {
+  .footer-container {
+    max-width: 1280px;
     min-height: 534px;
     padding: 104px 132px 32px 132px;
   }
