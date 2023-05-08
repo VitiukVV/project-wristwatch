@@ -125,7 +125,6 @@ details[open] summary {
 }
 
 details #open {
-  /* margin-left: 126px; */
   margin-left: 5px;
   color: rgba(20, 20, 20, 0.5);
 }
@@ -180,9 +179,6 @@ details[open] #close {
   .sale-item:not(:first-child) {
     margin-top: 8px;
   }
-  /* details #open {
-    margin-left: 70px;
-  } */
 }
 
 @media screen and (min-width: 375px) {
@@ -218,9 +214,6 @@ details[open] #close {
     font-size: 38px;
     line-height: 1.05;
   }
-  /* details #open {
-    margin-left: 363px;
-  } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -252,7 +245,4 @@ details[open] #close {
   .sale-bottom-text.subject {
     margin-bottom: 20px;
   }
-  /* details #open {
-    margin-left: 160px;
-  } */
 }
