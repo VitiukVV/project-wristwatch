@@ -20,8 +20,6 @@
 }
 
 .footer-tel-link {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
@@ -33,8 +31,6 @@
 }
 
 .footer-address-link {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -58,8 +54,6 @@
 }
 .footer-navigation-list {
   width: 68px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -118,8 +112,9 @@
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    max-width: 1279px;
+    width: 768px;
     min-height: 476px;
+    margin: 0 auto;
     padding: 80px 32px 20px 32px;
     justify-content: space-between;
   }
@@ -133,6 +128,9 @@
   }
   .footer-logo-mob {
     display: none;
+  }
+  .footer-logo-tab {
+    display: block;
   }
 
   .footer-navigation-list {
@@ -176,7 +174,7 @@
     font-size: 18px;
     line-height: 1.33;
   }
-  .footer-link-text {
+  .footer-text {
     font-size: 14px;
     line-height: 1.29;
   }
@@ -184,7 +182,7 @@
 
 @media screen and (min-width: 1280px) {
   .footer-container {
-    max-width: 1280px;
+    width: 1280px;
     min-height: 534px;
     margin: 0 auto;
     padding: 104px 52px 32px 52px;
