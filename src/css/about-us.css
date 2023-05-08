@@ -26,6 +26,7 @@
 
 .about-us-img {
     width: 335px;
+    height: 365px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -93,6 +94,7 @@
 
     .about-us-img {
         width: 704px;
+        height: 465px;
     }
 }
 
@@ -127,6 +129,7 @@
 
     .about-us-img {
         width: 892px;
+        height: 500px;
         margin-right: 0;
     }
 }
