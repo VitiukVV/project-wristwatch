@@ -52,7 +52,8 @@
     letter-spacing: -0.02em;
     color: #FFFFFF;
     position: relative;
-    left: 87px;
+    max-width: 190x;
+    left: 0;
     margin-bottom: 40px;
 }
 .btn-wrapper {
@@ -110,6 +111,7 @@
     }
     .descr-watches-hero {
         max-width: 248px;
+        left: 87px;
     }
 }
 
@@ -184,9 +186,11 @@
     .descr-watches-hero {
         position: absolute;
         top: 0;
+        left: 52px;
         transform: translateX(894px);
         margin-bottom: 0;
         display: inline;
+        max-width: 282px;
     }
     .btn-number-wrapper {
         margin-bottom: 0;
