@@ -79,19 +79,6 @@
   background-color: #141414;
 }
 
-.sale-subtitle::after {
-  position: absolute;
-  right: 0;
-  top: 20px;
-  display: inline-block;
-  vertical-align: middle;
-
-  content: '';
-  width: 16px;
-  height: 1px;
-  background-color: #141414;
-}
-
 .sale-bottom-text.subject {
   margin-bottom: 40px;
 }
@@ -103,10 +90,99 @@
   color: rgba(20, 20, 20, 0.5);
 }
 
+/* READ MORE */
+
+.sale-subtitle,
+details {
+  display: inline;
+}
+
+details {
+  position: relative;
+}
+
+details summary {
+  display: block;
+  margin-bottom: 8px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+details summary:focus {
+  outline: none;
+}
+
+details[open] {
+  display: block;
+  padding-top: 17px;
+  animation: open 0.2s linear;
+}
+
+details[open] summary {
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+
+details #open {
+  /* margin-left: 126px; */
+  margin-left: 5px;
+  color: rgba(20, 20, 20, 0.5);
+}
+
+details #open:after {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  padding-left: 8px;
+  content: '\00bb';
+  transform: rotate(90deg);
+}
+details[open] #open {
+  display: none;
+}
+details #close {
+  display: none;
+}
+details[open] #close {
+  display: block;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* .sale-subtitle::after {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  display: inline-block;
+  vertical-align: middle;
+
+  content: '';
+  width: 16px;
+  height: 1px;
+  background-color: #141414;
+} */
+
 @media screen and (max-width: 374px) {
   .sale-item:not(:first-child) {
     margin-top: 8px;
   }
+  /* details #open {
+    margin-left: 70px;
+  } */
 }
 
 @media screen and (min-width: 375px) {
@@ -142,6 +218,9 @@
     font-size: 38px;
     line-height: 1.05;
   }
+  /* details #open {
+    margin-left: 363px;
+  } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -173,4 +252,7 @@
   .sale-bottom-text.subject {
     margin-bottom: 20px;
   }
+  /* details #open {
+    margin-left: 160px;
+  } */
 }
