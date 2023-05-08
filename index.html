@@ -42,7 +42,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <script type="module" crossorigin src="/project-wristwatch/assets/index-a890edf8.js"></script>
-    <link rel="stylesheet" href="/project-wristwatch/assets/index-0839b378.css">
+    <link rel="stylesheet" href="/project-wristwatch/assets/index-19bc8937.css">
   </head>
   <body>
     <header class="header">
@@ -402,35 +402,29 @@
       </li>
     </ul>
 
-    <button type="button" class="catalog-but-mob">BUY NOW</button>
+    <button type="button" data-modal-open class="catalog-but-mob">BUY NOW</button>
   </div>
 
   <!-- MODAL -->
 
-  <!-- <div class="backdrop">
-    <div class="modal">
-      <button type="button" class="icon-form">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-        >
-          <path
-            stroke="#141414"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.3"
-            d="M18 6 6 18M6 6l12 12"
-          />
+
+
+  <div class="backdrop is-hidden" data-modal>
+
+    <div class="modal" data-modal>
+      <button type="button" class="icon-form" data-modal-close>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+          <path stroke="#141414" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
+            d="M18 6 6 18M6 6l12 12" />
         </svg>
       </button>
 
-      <form action="" class="form-modal-list">
+      <form name="watch-form" class="form-modal-list" novalidate>
+
         <div class="form-item">
           <div class="modal-form">
             <label for="user_name" class="label-form">Full name</label>
-            <input type="name" name="name" id="user_name" class="input-form" />
+            <input type="text" name="fullname" id="user_name" class="input-form" />
           </div>
           <div class="modal-form">
             <label for="user_email" class="label-form">Email</label>
@@ -443,15 +437,12 @@
           </div>
           <div class="modal-form">
             <label for="user_card" class="label-form">Card number</label>
-            <input type="card" name="card" id="user_card" class="input-form" />
+            <input type="text" name="cardnumber" id="user_card" class="input-form" />
           </div>
           <div class="modal-form">
             <label for="user_comments" class="label-form">Comments</label>
-            <textarea
-              name="comment"
-              id="user_comment"
-              class="input-form-comment"
-            ></textarea>
+            <textarea name="comments" id="user_comments" class="input-form-comment" placeholder="Enter your text"></textarea>
+
           </div>
 
           <button type="submit" class="button-submit">submit</button>
@@ -462,16 +453,14 @@
         </div>
 
         <div class="wrap">
-          <img src="" alt="clock" width="276" height="274" />
+          <img src="/project-wristwatch/assets/IMG_modal-1a7347e4.png" alt="clock" width="276" height="274">
 
-          <h3 class="cat-mob-item">
-            Tube Watch S42 Date Steel With Black Case
-          </h3>
+          <h3 class="cat-mob-item">Tube Watch S42 Date Steel With Black...</h3>
           <p class="cat-mob-next">€395</p>
         </div>
       </form>
     </div>
-  </div> -->
+  </div>
 </section>
 
       <section class="new-watches-section">
