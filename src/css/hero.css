@@ -1,213 +1,208 @@
 .container-hero {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 .hero {
-    background-color: #141414;
-    padding-top: 35px;
-    padding-bottom: 40px;
+  background-color: #141414;
+  padding-top: 35px;
+  padding-bottom: 40px;
 }
 .hero-title {
-    font-weight: 600;
-    font-size: 38px;
-    line-height: 1.05;
-    letter-spacing: -0.04em;
-    color: #FFFFFF;
-    width: 100%;
-    margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 60px;
 }
 .watch-hero-img {
-    width: 220px;
-    margin-bottom: 20px;
+  width: 220px;
+  margin-bottom: 20px;
 }
 .number-of-watch {
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
 .end-number-watches {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-left: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 6px;
 }
 .end-number-watches::before {
-    content: '';
-    background-color: #FFFFFF;
-    height: 1px;
-    width: 32px;
+  content: '';
+  background-color: #ffffff;
+  height: 1px;
+  width: 32px;
 }
 .number-of-watch {
-    display: flex;
+  display: flex;
 }
 .descr-watches-hero {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-    position: relative;
-    max-width: 190x;
-    left: 0;
-    margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  position: relative;
+  max-width: 190x;
+  left: 0;
+  margin-bottom: 40px;
 }
 .btn-wrapper {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 40px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
 }
 .right-pard-wrapper {
-    position: relative;
+  position: relative;
 }
 .slide-number-wrapper {
-    position: absolute;
-    bottom: -35px;
-    right: 0px;
+  position: absolute;
+  bottom: -35px;
+  right: 0px;
 }
 .slide-btn-hero {
-    background-color: transparent;
-    width: 32px;
-    height: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2,1);
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-slider-icon {
-    stroke: rgba(255, 255, 255, 0.5);
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2,1);
+  stroke: rgba(255, 255, 255, 0.5);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .slide-btn-hero:hover .hero-slider-icon,
 .slide-btn-hero:focus .hero-slider-icon {
-    stroke: rgba(255, 255, 255);
+  stroke: rgba(255, 255, 255);
 }
 .slide-btn-hero:hover,
 .slide-btn-hero:focus {
-    border: 1px solid rgba(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255);
 }
 .swiper {
-    width: 266px;
+  width: 266px;
 }
 
-
 @media screen and (min-width: 375px) {
-    .container-hero {
-        width: 375px;
-    }
-    .hero-title {
-        max-width: 335px;
-    }
-    .watch-hero-img {
-        width: 266px;
-        height: 200px;
-    }
-    .descr-watches-hero {
-        max-width: 248px;
-        left: 87px;
-    }
+  .container-hero {
+    max-width: 375px;
+  }
+  .hero-title {
+    max-width: 335px;
+  }
+  .watch-hero-img {
+    width: 266px;
+    height: 200px;
+  }
+  .descr-watches-hero {
+    max-width: 248px;
+    left: 87px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .container-hero {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    .hero {
-        padding-top: 40px;
-        padding-bottom: 64px;
-    }
-    .hero-title {
-        font-size: 60px;
-        line-height: 1.03;
-        max-width: 653px;
-        margin-bottom: 60px;
-    }
-    .watch-hero-img {
-        width: 436px;
-        height: 255px;
-        margin-bottom: 20px;
-    }
-    .right-pard-wrapper {
-        width: 436px;
-    }
-    .descr-watches-hero {
-        position: absolute;
-        top: 316px;
-        transform: translateX(401px);
-        margin-bottom: 0;
-        display: inline;
-    }
-    .slide-btn-hero {
-        width: 40px;
-        height: 40px;
-    }
-    .hero-slider-icon {
-        width: 24px;
-        height: 24px;
-    }
-    .btn-number-wrapper {
-        gap: 262px;
-    }
-    .watch-arm-hero-img {
-        width: 704px;
-        height: 410px;
-    }
-    .slide-number-wrapper {
-        bottom: -43px;
-        right: 0;
-    }
-    .swiper {
-        width: 436px;
-    }
+  .container-hero {
+    max-width: 768px;
+  }
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+  .hero-title {
+    font-size: 60px;
+    line-height: 1.03;
+    max-width: 653px;
+    margin-bottom: 60px;
+  }
+  .watch-hero-img {
+    width: 436px;
+    height: 255px;
+    margin-bottom: 20px;
+  }
+  .right-pard-wrapper {
+    width: 436px;
+  }
+  .descr-watches-hero {
+    position: absolute;
+    top: 316px;
+    transform: translateX(401px);
+    margin-bottom: 0;
+    display: inline;
+  }
+  .slide-btn-hero {
+    width: 40px;
+    height: 40px;
+  }
+  .hero-slider-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .btn-number-wrapper {
+    gap: 262px;
+  }
+  .watch-arm-hero-img {
+    width: 704px;
+    height: 410px;
+  }
+  .slide-number-wrapper {
+    bottom: -43px;
+    right: 0;
+  }
+  .swiper {
+    width: 436px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .container-hero {
-        width: 1280px;
-        padding-left: 52px;
-        padding-right: 52px;
-    }
-    .hero {
-        padding-bottom: 80px;
-    }
-    .hero-title {
-        max-width: 750px;
-        margin-bottom: 43px;
-    }
-    .descr-watches-hero {
-        position: absolute;
-        top: 0;
-        left: 52px;
-        transform: translateX(894px);
-        margin-bottom: 0;
-        display: inline;
-        max-width: 282px;
-    }
-    .btn-number-wrapper {
-        margin-bottom: 0;
-    }
-    .watch-arm-hero-img {
-        width: 676px;
-        height: 394px;
-    }
-    .hero-desk-wrapper {
-        display: flex;
-        gap: 68px;
-        align-items: end;
-    }
-    .slide-number-wrapper {
-        right: 0
-    }
-    .btn-wrapper {
-        margin-bottom: 0;
-    }
+  .container-hero {
+    max-width: 1280px;
+  }
+  .hero {
+    padding-bottom: 80px;
+  }
+  .hero-title {
+    max-width: 750px;
+    margin-bottom: 43px;
+  }
+  .descr-watches-hero {
+    position: absolute;
+    top: 0;
+    left: 52px;
+    transform: translateX(894px);
+    margin-bottom: 0;
+    display: inline;
+    max-width: 282px;
+  }
+  .btn-number-wrapper {
+    margin-bottom: 0;
+  }
+  .watch-arm-hero-img {
+    width: 676px;
+    height: 394px;
+  }
+  .hero-desk-wrapper {
+    display: flex;
+    gap: 68px;
+    align-items: end;
+  }
+  .slide-number-wrapper {
+    right: 0;
+  }
+  .btn-wrapper {
+    margin-bottom: 0;
+  }
 }

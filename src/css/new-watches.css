@@ -27,8 +27,10 @@
   padding-bottom: 40px;
 }
 .new-watches-container {
- padding-left: 20px;
- padding-right: 20px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .new-watches-list {
@@ -46,8 +48,7 @@
 
 @media screen and (min-width: 375px) {
   .new-watches-container {
-    width: 375px;
-    margin: 0 auto;
+    max-width: 375px;
   }
   .new-watches-item {
     width: 335px;
@@ -60,9 +61,7 @@
     padding-bottom: 64px;
   }
   .new-watches-container {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 768px;
   }
 
   .new-watches-list {
@@ -85,9 +84,7 @@
     padding-bottom: 80px;
   }
   .new-watches-container {
-    width: 1280px;
-    padding-left: 52px;
-    padding-right: 52px;
+    max-width: 1280px;
   }
 
   .new-watches-item {

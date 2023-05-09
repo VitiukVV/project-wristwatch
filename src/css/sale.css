@@ -1,4 +1,5 @@
 .sale-container {
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -183,7 +184,7 @@ details[open] #close {
 
 @media screen and (min-width: 375px) {
   .sale-container {
-    width: 375px;
+    max-width: 375px;
   }
   .sale-item:not(:first-child) {
     margin-top: 10px;
@@ -192,8 +193,7 @@ details[open] #close {
 
 @media screen and (min-width: 768px) {
   .sale-container {
-    width: 768px;
-    padding: 0 32px;
+    max-width: 768px;
   }
   .sale-section {
     padding-top: 64px;
@@ -218,8 +218,7 @@ details[open] #close {
 
 @media screen and (min-width: 1280px) {
   .sale-container {
-    width: 1280px;
-    padding: 0 52px;
+    max-width: 1280px;
   }
   .sale-section {
     padding-top: 80px;

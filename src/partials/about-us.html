@@ -22,10 +22,24 @@
         </li>
       </ul>
     </div>
-    <img
-      class="about-us-img"
-      src="./img/about-us/watchspot.gif"
-      alt="About us - Watch"
-    />
+    <picture>
+      <source
+        srcset="./img/about-us/watchspot.gif"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./img/about-us/watchspot.gif"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./img/about-us/watchspot.gif"
+        media="(max-width: 767px)"
+      />
+      <img
+        class="about-us-img"
+        src="./img/about-us/watchspot.gif"
+        alt="About us - Watch"
+      />
+    </picture>
   </div>
 </section>
