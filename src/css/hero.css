@@ -169,7 +169,7 @@
 
 @media screen and (min-width: 1280px) {
   .container-hero {
-    max-width: 1176px;
+    max-width: 1216px;
   }
   .hero {
     padding-bottom: 80px;
@@ -182,7 +182,7 @@
     position: absolute;
     top: 0;
     left: 52px;
-    transform: translateX(894px);
+    transform: translateX(830px);
     margin-bottom: 0;
     display: inline;
     max-width: 282px;
