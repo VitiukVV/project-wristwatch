@@ -19,8 +19,6 @@
 
 .modal {
   position: absolute;
-  /* width: 904px; */
-  /* height: 694px; */
   width: 280px;
   height: 95%;
   left: 50%;
@@ -47,8 +45,6 @@
 .form-item {
   display: block;
   width: 100%;
-  /* width: 508px; */
-  /* height: 614px; */
 }
 
 .wrap {
@@ -67,8 +63,6 @@
   align-items: flex-start;
   flex-direction: row-reverse;
   gap: 40px;
-  /* width: 824px; */
-  /* height: 614px; */
   margin-left: 0;
 }
 
@@ -124,7 +118,6 @@
   fill: rgba(20, 20, 20, 1);
   background-color: #ffffff;
   margin-left: auto;
-  /* margin-bottom: 2px; */
   margin-bottom: 8px;
 }
 
@@ -132,8 +125,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 507px; */
-  /* width: 295px; */
   width: 100%;
   height: 50px;
   background: #1e2827;
@@ -243,22 +234,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 83px; */
   gap: 40px;
   margin-bottom: 40px;
 }
 
-/* .catalog-mob {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-    } */
-
 .catal-img {
   padding: 43px 30px;
-  /* margin-bottom: 57px; */
   background-color: #efefef;
 }
 
@@ -315,7 +296,6 @@
 @media screen and (min-width: 768px) {
   .modal {
     width: 744px;
-    /* height: 670px; */
   }
   .modal-form-wrap {
     display: flex;
@@ -360,7 +340,6 @@
     padding: 40px;
     width: 904px;
     height: 694px;
-    /* height: 670px; */
   }
   .modal-form-wrap {
     gap: 40px;
@@ -377,7 +356,7 @@
   }
 
   .catalog-container {
-    max-width: 1280px;
+    max-width: 1176px;
   }
 
   .cat-title {
@@ -385,7 +364,6 @@
   }
 
   .catalog-list-mob {
-    /* width: 1176px; */
     gap: 64px 24px;
     margin-bottom: 80px;
   }
