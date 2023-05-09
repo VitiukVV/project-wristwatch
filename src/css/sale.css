@@ -193,7 +193,7 @@ details[open] #close {
 
 @media screen and (min-width: 768px) {
   .sale-container {
-    max-width: 768px;
+    max-width: 744px;
   }
   .sale-section {
     padding-top: 64px;
