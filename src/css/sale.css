@@ -61,25 +61,6 @@
   color: rgba(20, 20, 20, 0.5);
 }
 
-.sale-subtitle {
-  position: relative;
-  margin-bottom: 17px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-}
-
-.sale-subtitle::before {
-  display: block;
-  margin-bottom: 8px;
-  content: '';
-  width: 100%;
-  height: 1px;
-  background-color: #141414;
-}
-
 .sale-bottom-text.subject {
   margin-bottom: 40px;
 }
@@ -93,88 +74,43 @@
 
 /* READ MORE */
 
-.sale-subtitle,
-details {
-  display: inline;
-}
-
-details {
-  position: relative;
-}
-
-details summary {
-  display: block;
-  margin-bottom: 8px;
-  margin-left: auto;
+button.accordion {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  border-top: 1px solid #141414;
+  color: #141414;
   cursor: pointer;
-}
-
-details summary:focus {
+  padding: 8px 0 17px 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-top: 1px solid #141414;
   outline: none;
+  transition: 0.4s;
 }
 
-details[open] {
-  display: block;
-  padding-top: 17px;
-  animation: open 0.2s linear;
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
-details[open] summary {
-  position: absolute;
-  top: -25px;
-  right: 0;
+button.accordion:after {
+  content: '\002B';
+  color: #3a3535;
+  font-size: 30px;
+  line-height: 0.8;
+  float: right;
 }
 
-details #open {
-  margin-left: 5px;
-  color: rgba(20, 20, 20, 0.5);
+button.accordion.active:after {
+  content: '\2212';
 }
-
-details #open:after {
-  display: inline-block;
-  position: relative;
-  top: -3px;
-  padding-left: 8px;
-  content: '\00bb';
-  transform: rotate(90deg);
-}
-details[open] #open {
-  display: none;
-}
-details #close {
-  display: none;
-}
-details[open] #close {
-  display: block;
-}
-
-::-webkit-details-marker {
-  display: none;
-}
-
-@keyframes open {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* .sale-subtitle::after {
-  position: absolute;
-  right: 0;
-  top: 20px;
-  display: inline-block;
-  vertical-align: middle;
-
-  content: '';
-  width: 16px;
-  height: 1px;
-  background-color: #141414;
-} */
 
 @media screen and (max-width: 374px) {
   .sale-item:not(:first-child) {
