@@ -45,6 +45,14 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu-container {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .mobile-menu.is-hidden {
   transform: translate(100%, 0);
 }
@@ -141,7 +149,14 @@
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-  }
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .header-link:hover,
+    .header-link:focus {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
 
   .header-address-tel {
     font-size: 9px;
@@ -151,7 +166,14 @@
     border-radius: 8px;
     padding: 18px 35px;
     display: block;
-  }
+    border: 1px solid transparent;
+    transition: border 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .header-address-tel:hover,
+    .header-address-tel:focus {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
 }
 
 @media screen and (min-width: 1280px) {
